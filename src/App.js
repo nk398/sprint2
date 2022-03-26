@@ -8,10 +8,12 @@ import Navbar from './components/Navbar';
 import { Routes, Route } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar';
 
+
 export default class App extends Component {
   apiKey = "b72c25db9b704d3a8bd6795549500944";
-  pageSize = 6;
+  pageSize = 100;
   country = 'in';
+  
 
   state = {
     progress: 0
@@ -21,17 +23,20 @@ export default class App extends Component {
   }
   render() {
     return (
+     
       <div> 
         <LoadingBar
         color='#f11946'
           progress={this.state.progress}
           height={3}
         />
-        
+      
         <Routes>
-          <Route exact path="/" element={ <News setProgress={this.setProgress} key={1} pageSize={this.pageSize} apiKey={this.apiKey} country={this.country} category='general'/> } />
-         
+          
+        <Route exact path="/" element={ <News setProgress={this.setProgress} key={1} pageSize={this.pageSize} apiKey={this.apiKey} country={this.country} category='general'/> } />
+          
         </Routes>
+        
       </div>
       
     )
