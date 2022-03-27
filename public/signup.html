@@ -1,216 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Signup Page</title>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+    </head>
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
-        .bg-image {
-            /* The image used */
-            background-image: url("https://i.pinimg.com/originals/c0/bf/36/c0bf36c9fb8198d8af821f584098b5db.png");
+    
+    <script src="signup.js"></script>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header">Signup Form </h2>
+                </div>
 
-            /* Add the blur effect */
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Full name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+                        <div id="button_container">
+                            <button onclick="register()">Register</button>
+                        </div>
 
-            /* Full height */
-            height: 100%;
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* Position text in the middle of the page/image */
-        .bg-text {
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-            color: white;
-            font-weight: bold;
-            border: 3px solid #f1f1f1;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 80%;
-            padding: 20px;
-            text-align: center;
-        }
-        * {
-            box-sizing: border-box;
-        }
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: orange;
-            color: black;
-            padding: 5px 20px;
-            margin: 5px 0;
-            border: none;
-            cursor: pointer;
-            font-size: 10px;
-        }
-
-        form .field.shake{
-            animation: shake 0.3s ease-in-out;
-        }
-        @keyframes shake {
-            0%, 100%{
-                margin-left: 0px;
-            }
-            20%, 80%{
-                margin-left: -12px;
-            }
-            40%, 60%{
-                margin-left: 12px;
-            }
-        }
-        form .field .input-area{
-            height: 50px;
-            width: 100%;
-            position: relative;
-        }
-        form input{
-            color: black;
-            width: 100%;
-            height: 100%;
-            outline: none;
-            padding: 0 45px;
-            font-size: 18px;
-            background: none;
-            caret-color: #5372F0;
-            border-radius: 5px;
-            border: 1px solid #bfbfbf;
-            border-bottom-width: 2px;
-            transition: all 0.2s ease;
-        }
-        form .field input:focus,
-        form .field.valid input{
-            border-color: #5372F0;
-        }
-        form .field.shake input,
-        form .field.error input{
-            border-color: #dc3545;
-        }
-        .field .input-area i{
-            position: absolute;
-            top: 50%;
-            font-size: 18px;
-            pointer-events: none;
-            transform: translateY(-50%);
-        }
-        .input-area .icon{
-            left: 15px;
-            color: #bfbfbf;
-            transition: color 0.2s ease;
-        }
-        .input-area .error-icon{
-            right: 15px;
-            color: #dc3545;
-        }
-        form input:focus ~ .icon,
-        form .field.valid .icon{
-            color: #5372F0;
-        }
-        form .field.shake input:focus ~ .icon,
-        form .field.error input:focus ~ .icon{
-            color: #bfbfbf;
-        }
-        form input::placeholder{
-            color: #bfbfbf;
-            font-size: 17px;
-        }
-        form .field .error-txt{
-            color: #dc3545;
-            text-align: left;
-            margin-top: 5px;
-        }
-        form .field .error{
-            display: none;
-        }
-        form .field.shake .error,
-        form .field.error .error{
-            display: block;
-        }
-        form .pass-txt{
-            text-align: left;
-            margin-top: -10px;
-        }
-        .wrapper a{
-            color: #5372F0;
-            text-decoration: none;
-        }
-        .wrapper a:hover{
-            text-decoration: underline;
-        }
-        form input[type="submit"]{
-            height: 50px;
-            margin-top: 30px;
-            color: #fff;
-            padding: 0;
-            border: none;
-            background: #5372F0;
-            cursor: pointer;
-            text-align: center;
-            border-bottom: 2px solid rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-        form input[type="submit"]:hover{
-            background: #2c52ed;
-            text-align: center;
-        }
-    </style>
-    <title>SignUp</title>
-</head>
-<body>
-
-<div class="bg-image"></div>
-
-<div class="bg-text">
-    <p>
-    <form action="#">
-    <div class = "field username">
-        <div class="input-area">
-            <input type="text" placeholder="Username">
-            <i class="icon fas fa-envelope"></i>
-            <i class="error error-icon fas fa-exclamation-circle"></i>
-        </div>
-        <div class="error error-txt">Username can't be blank</div>
-    </div>
-        <div class="field email">
-            <div class="input-area">
-                <input type="text" placeholder="Email Address">
-                <i class="icon fas fa-envelope"></i>
-                <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                </div>
             </div>
-            <div class="error error-txt">Email can't be blank</div>
         </div>
-        <div class="field password">
-            <div class="input-area">
-                <input type="password" placeholder="Password">
-                <i class="icon fas fa-lock"></i>
-                <i class="error error-icon fas fa-exclamation-circle"></i>
-            </div>
-            <div class="error error-txt">Password can't be blank</div>
-        </div>
-        <input type="submit" value="SignUp">
-    </form>
-    <script src="script2.js"></script>
-</p>
-</div>
-</body>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    
 </html>
