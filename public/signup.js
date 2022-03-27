@@ -24,11 +24,7 @@ function register () {
       return
       // Don't continue running the code
     }
-    if (validate_field(full_name) == false || validate_field(favourite_song) == false || validate_field(milk_before_cereal) == false) {
-      alert('One or More Extra Fields are not in the expected format')
-      return
-    }
-   
+      
     // Move on with Auth
     auth.createUserWithEmailAndPassword(email, password)
     .then(function() {
@@ -81,12 +77,7 @@ function register () {
       // Add this user to Firebase Database
       var database_ref = database.ref()
   
-      // Create User data
-      var user_data = {
-        last_login : Date.now()
-      }
-  
-      // Push to Firebase Database
+        // Push to Firebase Database
       database_ref.child('users/' + user.uid).update(user_data)
   
       // DOne
