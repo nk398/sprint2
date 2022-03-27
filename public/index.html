@@ -8,7 +8,31 @@
     <meta
       name="description"
       content="Web site created using create-react-app"
-    />
+    /><style>
+      .button {
+            position: absolute;
+            padding-left: 95in;
+            padding-right: 10in;
+            bottom: 650px;
+            background-color: orangered;
+            border: 10px;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+        
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px 30px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+        }
+        .button2:hover {
+            box-shadow: 0 120px 120px 0 rgba(100,0,200,100),0 170px 150px 0 rgba(100,0,200,190);
+        }
+    </style>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -28,7 +52,7 @@
     <title>React App</title>
   </head>
   <body>
-    <button onclick="location.href='login.html'" >Login</button>
+    <button onclick="location.href='login.html'"; id="button" class="button button2">Login</button>
     
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
