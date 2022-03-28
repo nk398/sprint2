@@ -9,6 +9,7 @@ const firebaseConfig = {
   };
   
   // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth()
 const database = firebase.database()
 
@@ -24,7 +25,7 @@ function register () {
       return
       // Don't continue running the code
     }
-      
+   
     // Move on with Auth
     auth.createUserWithEmailAndPassword(email, password)
     .then(function() {
@@ -77,7 +78,12 @@ function register () {
       // Add this user to Firebase Database
       var database_ref = database.ref()
   
-        // Push to Firebase Database
+      // Create User data
+      var user_data = {
+        last_login : Date.now()
+      }
+  
+      // Push to Firebase Database
       database_ref.child('users/' + user.uid).update(user_data)
   
       // DOne
