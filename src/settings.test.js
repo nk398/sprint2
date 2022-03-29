@@ -1,18 +1,12 @@
-import React from 'react';
-import { render, cleanup, fireEvent } from 'react-testing-library';
-import { screen } from '@testing-library/any-framework';
-import '../public/settings';
+import React from 'react'
+import { render, cleanup } from '@testing-library/react'
 
 afterEach(cleanup)
-render(<settings />);
-screen.getByText('settings');
 
-test('refresh button', () => {
-  const { button } = jest.fn()
- // const { } = render(<login onSubmit={handleSubmit} />)
+describe('App component loads correctly', () => {
+    test('renders correctly', () => {
+        render(<settings />);
 
-  screen.getByText(/refresh/i).click()
+    })
 
-  })
-
-  
+})
