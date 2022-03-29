@@ -33,13 +33,13 @@ test('click2', () => {
   userEvent.click(screen.getByText('Signout'))
 })
 
-test('click2', () => {
+test('click3', () => {
   render(
     <div>
-      <label htmlFor="button">Setting</label>
+      <label htmlFor="button">Settings</label>
       <input id="button" type="button" />
     </div>,
   )
 
-  userEvent.click(screen.getByText('Signout'))
+  userEvent.click(screen.getByText('Settings'))
 })
