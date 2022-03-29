@@ -1,4 +1,4 @@
-Date test plan was run on: 2/21/2022
+Date test plan was run on: March 28 2022
 
 | Test Case ID  | Person running test case  | Pass/Fail | Expected results |
 | ------------- | -------------------- | ---------- | ------------- |
