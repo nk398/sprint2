@@ -9,3 +9,22 @@ describe('App component loads correctly', () => {
       render(<signup />);
   })
 })
+
+describe("Test signup form", function() {
+ 
+  it("email check", function() {
+
+  })
+
+  it("username check", function() {
+
+  })
+
+  it("password check", function() {
+
+  })
+
+  it("signup", function() {
+
+  })
+})
