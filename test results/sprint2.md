@@ -27,5 +27,5 @@ Date test plan was run on: March 28 2022
 |7 API|Neha|Pass | science API	 endpoint for 200
 |8 API|Neha|Pass | Response
 |1 DB|Pallavi|Fail | database matching with the entered credentials
-|2 DB|Pallavi|Fail | create database and store value
-|3 DB|Pallavi|Fail| connect  firebase with app.js
+|2 DB|Pallavi|Pass | create database and store value
+|3 DB|Pallavi|Pass| connect  firebase with app.js
