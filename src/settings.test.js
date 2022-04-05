@@ -21,3 +21,14 @@ test('click', () => {
     userEvent.click(screen.getByText('Check'))
     expect(screen.getByLabelText('Check')).toBeChecked()
   })
+
+test('click2', () => {
+  render(
+    <div>
+      <label htmlFor="button">Cancel</label>
+      <input id="button" type="button" />
+    </div>,
+  )
+
+  userEvent.click(screen.getByText('Cancel'))
+})
