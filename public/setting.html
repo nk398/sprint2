@@ -79,6 +79,22 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type ="text/babel" src="/src/materialize.min.js"></script>
 	<script type ="text/JavaScript" src="setting.js"></script>
+<script>
+	const firebaseConfig = {
+    apiKey: "AIzaSyCOopsqmMV44hRfhX-Yp93IysyZGfIhRhs",
+    authDomain: "news-app-3abc3.firebaseapp.com",
+    projectId: "news-app-3abc3",
+    storageBucket: "news-app-3abc3.appspot.com",
+    messagingSenderId: "649684876916",
+    appId: "1:649684876916:web:1d868a79af4022a2325b21",
+    measurementId: "G-8EQFD6DZ5W"
+  };
+  
+  // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth()
+const database = firebase.database()
+</script>
 </body>
 
 </html>
