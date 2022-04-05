@@ -57,20 +57,7 @@ function register () {
     })
   }
   
-  // Set up our login function
-  function login () {
-    // Get all our input fields
-    email = document.getElementById('email').value
-    password = document.getElementById('password').value
-  
-    // Validate input fields
-    if (validate_email(email) == false || validate_password(password) == false) {
-      alert('Email or Password are not in the expected format')
-      return
-      // Don't continue running the code
-    }
-  
-    auth.signInWithEmailAndPassword(email, password)
+      auth.signInWithEmailAndPassword(email, password)
     .then(function() {
       // Declare user variable
       var user = auth.currentUser
