@@ -39,14 +39,13 @@ We have approached this sprint by first creating the UX for the web application 
 ### Integration Testing
 - Integration testing has been used to check the integration of the modules and components and to test that they are all running as expected
 - when an unauthenticated user is on the landing page, they should be able to access the login page with status 200 ok
-- After entering the correct login details the user whould be able to access the dashboard with status 200 ok
-- Log Out
-- Save
-- API
-- Dasboard
+- After entering the correct login details the user whould be able to access the dashboard 
+- when an unauthenticated user enters details in the signup page they should be directed to the login page 
+- The authenticated user should be able to access the settings button and select preferences 
+- Authenticated user should be able to access the signout button on dashboard and should be directed back to the unauthenticated dashboard to login or sign up
 
 # Testing Tasks
-- Unit Testing by each Team member on their own machine
+- Integration Testing by each Team member on their own machine
 
 # Responsibilities
 - UX testing
