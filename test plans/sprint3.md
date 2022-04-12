@@ -1,6 +1,6 @@
 # INTRODUCTION
 
-This is an application created for logging in and signup up users. The landing page leads to the login page for current users to sign in and also leads to a sign up page for new members, and after setting page navigates to Cetgories, that users will select the specifi topic of their interest to display latest news.
+This is an application created for logging in and signup up users. The landing page leads to the login page for current users to sign in and also leads to a sign up page for new members, and after setting page navigates to Catgories, that users will select the specific topic of their interest to display latest news.
 
 # Test Items
 - Web application(UX) 
