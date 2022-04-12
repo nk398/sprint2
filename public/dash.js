@@ -1,6 +1,7 @@
+import ReactPaginate from 'react-paginate';
 $(document).ready(function () {
 
-  let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=231a0cfa993848cf8f35356ff6cb0d8a"
+  let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=c42f6fc310a04ddfaca1583359d6b108"
 
   $.ajax({
     
@@ -48,6 +49,22 @@ $(document).ready(function () {
             </div>
            </div>
           </div>
+          </div>
+			<ReactPaginate
+				nextLabel=" >> "
+				previousLabel=" << "
+				breakLabel="..."
+				forcePage={currentPage}
+				pageCount={totalPages}
+				pageRangeDisplayed={2}
+				renderOnZeroPageCount={null}
+				onPageChange={handlePageClick}
+				className="pagination"
+				activeClassName="active-page"
+				previousClassName="previous-page"
+				nextClassName="next-page"
+			/>
+		</div>
         `;
       }
 
@@ -61,6 +78,7 @@ $(document).ready(function () {
       let errorMsg = `<div class="errorMsg center">Some error occured</div>`;
       $("#newsResults").html(errorMsg);
     }
+  
   })
-
+  
 });
