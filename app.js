@@ -14,8 +14,6 @@ const { pipeline } = require('stream');
 app.locals.moment = moment;
 const math = require('math');
 
-
-
 const services = require('./services/render');
 const controller = require('./controller/controller');
 
