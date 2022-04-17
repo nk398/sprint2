@@ -11,7 +11,7 @@ const path = require('path');
 // // load routers
 
 
-const services = require('../services/render');
+const services = require('../render/render');
 const controller = require('../controller/controller');
 //login handle
 router.get('/login',(req,res)=>{
