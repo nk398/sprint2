@@ -9,19 +9,25 @@ const session = require('express-session');
 const passport = require("passport");
 const axios = require('axios');
 const moment = require('moment');
+const Request = require('request');
 const { pipeline } = require('stream');
 
 app.locals.moment = moment;
 const math = require('math');
 
-const services = require('./services/render');
-const controller = require('./controller/controller');
+//import routes and validation
 
+
+const services = require('./render/render');
+const controller = require('./controller/controller');
 const usersRoutes = require("./routes/users");
 const indexRoutes = require("./routes/index");
 
+// middleware defitions
+// parse requests of content-type - application/json
 app.use(bodyParser.json());
 
+// parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
@@ -81,7 +87,7 @@ app.get("/news/:id", async (req, res) => {
         res.status(401).json({ message: "Error retrieving user with id " });
       }
           else {
-            console.log("User is in");
+            console.log("User exists");
       console.log(userId)
       const response = await axios({
       url: "http://newsapi.org/v2/top-headlines?category=general&apiKey=48ea7dd1fa8c4d3582a208c6f8b6ddc6",
