@@ -40,7 +40,7 @@ router.get('/:page',async(req,res)=>{
 
         const results = {}
         results.results = reach.reach.slice(startIndex, endIndex)  //art
-        res.status(200).render('welcome', {
+        res.status(200).render('landing', {
             articles: results.results,
             pages: Math.ceil(countt / limit),
             current: page
