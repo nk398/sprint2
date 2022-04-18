@@ -2,7 +2,6 @@
 | ------------- | -------------------- | ---------- | ------------- | ------- |
 |1             | landing page        | goto localhost | application and server running | Nikita|
 |2           | landing page news        | goto localhost | api, application and server running | Nikita|
-
 |3              | Click Sign up/ Register|  Fill all information and click Register |link to the application and server running | Nikita |
 |4              | Click Sign up/ Register| Do not add all information and click Register|link to the application and server running | Nikita |
 |5             | Enter a valid set of credentials           | Click on Login  |link to the application and server running| Nikita|
