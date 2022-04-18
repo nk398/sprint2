@@ -1,6 +1,6 @@
-| Test Case ID  | Description/Summary  | Test Steps | Pre-requisite | Author  | Test Method |
+| Test Case ID  | Description/Summary  | Test Steps | Pre-requisite | Author  | 
 | ------------- | -------------------- | ---------- | ------------- | ------- | ----------- |
-|1              | News Api         | Fetch api call |UI | Neha | POST|
+|1              | Click Sign up/ Register|  Fill all information and click Register |link to the application and server running | Nikita |
 |2              | Business Api          | Authorize 200 |UI | Neha | POST|
 |3             | Health API           | Authorize 200  |UI| Neha| POST|
 |4              | Technology API           | Authorize 200 |UI | Neha| POST|
