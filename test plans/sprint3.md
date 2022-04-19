@@ -42,10 +42,19 @@ We have approached this sprint by first creating the UX for the web application 
 - Will land on the setting page choose the category, clicks radio button, it would display the news
 - It would have a save button, to store save categories
 
+### Navigation Bar
+- Navigation bar displays different tabs for different categories of news
+- The Home tab displays the news based on the default selected preferences of the user saved in the database
+
+### Pagination
+- Articles are divided into multiple pages with limited articles on each page
+- News in consecutive pages has an older publishing date compared to the ones on the previous pages
 
 ### Login and Logout
 - User can check successfully login and logout and check for the news
+
 ### Integration Testing
+- For Integration testing we are following the Bottoms UP testing stategywhere we test lower level modules and move further up
 - Integration testing has been used to check the integration of the modules and components and to test that they are all running as expected
 - when an unauthenticated user is on the landing page, they should be able to access the login page with status 200 ok
 - After entering the correct login details the user whould be able to access the dashboard 
@@ -54,7 +63,7 @@ We have approached this sprint by first creating the UX for the web application 
 - Authenticated user should be able to access the signout button on dashboard and should be directed back to the unauthenticated dashboard to login or sign up
 
 # Testing Tasks
-- Integration Testing by each Team member on their own machine
+- Integration Testing is to be done by each Team member on their own machine
 
 # Responsibilities
 - UX testing
