@@ -8,20 +8,20 @@ This is an application created for logging in and signup up users. The landing p
 - Database 
 
 # Features to be Tested
--Register user
--Signing In User
--Landing page 
--Signing out User
--News listing on landing page
--Refresh news on dashboard
--News listings on User Profile page 
--Refreshing news on User Profile page
--News categories in Settings
--Navigation bar for Home and individual categories on the landing page
--User preference news on dashboard
--Category wise news on individual category tabs
--Pagination on dashboard and landing page tabs to display limited number of articles
--News articles to appearing in descending order of published date.
+- Register user
+- Signing In User
+- Landing page 
+- Signing out User
+- News listing on landing page
+- Refresh news on dashboard
+- News listings on User Profile page 
+- Refreshing news on User Profile page
+- News categories in Settings
+- Navigation bar for Home and individual categories on the landing page
+- User preference news on dashboard
+- Category wise news on individual category tabs
+- Pagination on dashboard and landing page tabs to display limited number of articles
+- News articles to appearing in descending order of published date.
 
 
 # Approach
