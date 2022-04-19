@@ -1,6 +1,6 @@
 # INTRODUCTION
 
-This is an application created for logging in and signup up users. The landing page leads to the login page for current users to sign in and also leads to a sign up page for new members, and after setting page navigates to Catgories, that users will select the specific topic of their interest to display latest news.
+This is an application created for logging in and signup up users. The landing page leads to the login page for current users to sign in and also leads to a sign up page for new members, and after setting page navigates to Catgories, that users will select the specific topic of their interest to display latest news. This application aims to create a user friendly platform for streaming the news articles from various sources fetched by an API.
 
 # Test Items
 - Web application(UX) 
@@ -8,10 +8,20 @@ This is an application created for logging in and signup up users. The landing p
 - Database 
 
 # Features to be Tested
-- Landing page with news
-- Logging in and displaying news on portal
-- Settins to choose the category
-- Login and logout to show it works
+-Register user
+-Signing In User
+-Landing page 
+-Signing out User
+-News listing on landing page
+-Refresh news on dashboard
+-News listings on User Profile page 
+-Refreshing news on User Profile page
+-News categories in Settings
+-Navigation bar for Home and individual categories on the landing page
+-User preference news on dashboard
+-Category wise news on individual category tabs
+-Pagination on dashboard and landing page tabs to display limited number of articles
+-News articles to appearing in descending order of published date.
 
 
 # Approach
