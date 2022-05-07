@@ -3,7 +3,7 @@
     <a href="/dashboard/general/1"> News App</a>
     <div class="topnav-right">
       <a href="/dashboard/home/1" class="w3-bar-item w3-button">Home</a>
-  <a href="/dashboard/general/1" class="w3-bar-item w3-button">General</a>
+  <a href="/dashboard/general/1" class="w3-bar-item w3-button w3-dark-gray">General</a>
   <a href="/dashboard/sports/1" class="w3-bar-item w3-button">Sports</a>
   <a href="/dashboard/entertainment/1" class="w3-bar-item w3-button ">Entertainment</a>
   <a href="/dashboard/business/1" class="w3-bar-item w3-button">Business</a>
@@ -11,7 +11,6 @@
   <a href="/dashboard/science/1" class="w3-bar-item w3-button">Science</a>
   <a href="/dashboard/health/1" class="w3-bar-item w3-button">Health</a>
       <div class="refresh">
-
         <form method="GET" id="refresh" action="/dashboard/general/1">
           <Button type="submit" class="btn btn-primary" >Refresh</Button>
         </form> 
@@ -28,7 +27,16 @@
 </div>
 <div class="welcome-text">
   <h2>My Dashboard</h2>
+
+  
+  <form class="" action="/search/1" method="POST">
+  
+    <div style="text-align: center;">
+<input class="form" id="search_bar" name="search" type="search" placeholder="Search" style="width: 522px; margin-bottom: 10%;"aria-label="Search"> 
+<button class="btn btn-primary " style="width: 75px; margin-top: 2px" id="search_button" type="Submit">Search</button>
+
 </div>
+
 
 
 
