@@ -9,7 +9,7 @@
   <a href="/dashboard/business/1" class="w3-bar-item w3-button">Business</a>
   <a href="/dashboard/technology/1" class="w3-bar-item w3-button">Technology</a>
   <a href="/dashboard/science/1" class="w3-bar-item w3-button">Science</a>
-  <a href="/dashboard/health/1" class="w3-bar-item w3-button">Health</a>
+  <a href="/dashboard/health/1" class="w3-bar-item w3-button w3-dark-gray">Health</a>
       <div class="refresh">
         <form method="GET" id="refresh" action="/dashboard/health/1">
           <Button type="submit" class="btn btn-primary" >Refresh</Button>
@@ -27,6 +27,14 @@
 </div>
 <div class="welcome-text">
   <h2>My Dashboard</h2>
+
+  
+  <form class="" action="/search/1" method="POST">
+  
+    <div style="text-align: center;">
+<input class="form" id="search_bar" name="search" type="search" placeholder="Search" style="width: 522px; margin-bottom: 10%;"aria-label="Search"> 
+<button class="btn btn-primary " style="width: 75px; margin-top: 2px" id="search_button" type="Submit">Search</button>
+
 </div>
 
 
@@ -57,7 +65,6 @@
         <% }) %>
       </div>
   </div>
-
 
   <div class="pagination">
     <% if (pages > 0) { %>
@@ -92,6 +99,6 @@
 
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
