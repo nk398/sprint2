@@ -2,13 +2,15 @@
   <head>
   <div class="topnav">
     <div class="container-nav" >
-      <a href="1">News App</a>
+      <a href="search/1">News App</a>
       <div class="topnav-right">
         <a href="/users/login">Log In</a>
         <a href="/users/register">Register</a>&nbsp;&nbsp;&nbsp;&nbsp;
         
         <div class="refresh">
+
           <form method="GET" id="refresh" action="/">
+            <form method="GET" id="refresh" action="/search/1"></form>
             <Button type="submit" >Refresh</Button>
           </form> 
           
@@ -44,7 +46,14 @@
 
 
   <body style="background-color: #222121;">
-
+    <form class="" action="/search/1" method="POST">
+  
+      <div style="text-align: center;">
+  <input class="form" id="search_bar" name="search" type="search" placeholder="Search" style="width: 522px; margin-bottom: 10%;"aria-label="Search"> 
+  <button class="btn btn-primary " style="width: 75px; margin-top: 2px" id="search_button" type="Submit">Search</button>
+  
+  </div>
+  
   <div class="news-container"  >
       <div class="news" >
           <% articles.forEach(function(article,index){ %>
@@ -75,7 +84,7 @@
               <% if (current === 1) { %>
                   <a>First</a>
               <% } else { %>
-                  <a href="1">First</a>
+                  <a href="/search/1">First</a>
               <% } %>
               <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
               <% if (i !== 1) { %>
@@ -85,7 +94,7 @@
                   <% if (i === current) { %>
                       <a><%= i %></a>
                   <% } else { %>
-                      <a href="/<%= i %>"><%= i %></a>
+                      <a href="/search/<%= i %>"><%= i %></a>
                   <% } %>
                   <% if (i === Number(current) + 4 && i < pages) { %>
                       <a>...</a>
@@ -94,7 +103,7 @@
               <% if (current === pages) { %>
                   <a>Last</a>
               <% } else { %>
-                  <a href="/<%= pages %>">Last</a>
+                  <a href="/search/<%= pages %>">Last</a>
               <% } %>
           
         <% } %>
