@@ -1,15 +1,12 @@
-<link rel="stylesheet" href="/style.css">
-  <div class="topnav">
+<div class="topnav">
   <div class="container-nav" >
     <a href="/dashboard/home/1"> News App</a>
-
-    
     <div class="topnav-right">
-      <a href="/dashboard/home/1" class="w3-bar-item w3-button ">Home</a>
+      <a href="/dashboard/home/1" class="w3-bar-item w3-button w3-dark-gray">Home</a>
   <a href="/dashboard/general/1" class="w3-bar-item w3-button">General</a>
   <a href="/dashboard/sports/1" class="w3-bar-item w3-button">Sports</a>
-  <a href="/dashboard/entertainment/1" class="w3-bar-item w3-button">Entertainment</a>
-  <a href="/dashboard/business/1" class="w3-bar-item w3-button">Business</a>
+  <a href="/dashboard/entertainment/1" class="w3-bar-item w3-button ">Entertainment</a>
+  <a href="/dashboard/business/1" class="w3-bar-item w3-button ">Business</a>
   <a href="/dashboard/technology/1" class="w3-bar-item w3-button">Technology</a>
   <a href="/dashboard/science/1" class="w3-bar-item w3-button">Science</a>
   <a href="/dashboard/health/1" class="w3-bar-item w3-button">Health</a>
@@ -25,12 +22,19 @@
   </div>
 </div>
 
-
 <div class="welcome-text">
   <h2 style = "float:right"> Welcome <%= user.name %></h2>
 </div>
 <div class="welcome-text">
   <h2>My Dashboard</h2>
+
+  
+  <form class="" action="/search/1" method="POST">
+  
+    <div style="text-align: center;">
+<input class="form" id="search_bar" name="search" type="search" placeholder="Search" style="width: 522px; margin-bottom: 10%;"aria-label="Search"> 
+<button class="btn btn-primary " style="width: 75px; margin-top: 2px" id="search_button" type="Submit">Search</button>
+
 </div>
 
 
@@ -62,41 +66,36 @@
       </div>
   </div>
 
-
-
-<div class="pagination">
-<% if (pages > 0) { %>
-  
-      <% if (current === 1) { %>
-          <a>First</a>
-      <% } else { %>
-          <a href="/dashboard/home/1">First</a>
-      <% } %>
-      <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
-      <% if (i !== 1) { %>
-          <a>...</a>
-      <% } %>
-      <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
-          <% if (i === current) { %>
-              <a><%= i %></a>
+  <div class="pagination">
+    <% if (pages > 0) { %>
+      
+          <% if (current === 1) { %>
+              <a>First</a>
           <% } else { %>
-              <a href="/dashboard/home/<%= i %>"><%= i %></a>
+              <a href="/dashboard/home/1">First</a>
           <% } %>
-          <% if (i === Number(current) + 4 && i < pages) { %>
+          <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+          <% if (i !== 1) { %>
               <a>...</a>
           <% } %>
-      <% } %>
-      <% if (current === pages) { %>
-          <a>Last</a>
-      <% } else { %>
-          <a href="/dashboard/home/<%= pages %>">Last</a>
-      <% } %>
-  
-<% } %>
-</div>
-
-  
-
+          <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+              <% if (i === current) { %>
+                  <a><%= i %></a>
+              <% } else { %>
+                  <a href="/dashboard/home/<%= i %>"><%= i %></a>
+              <% } %>
+              <% if (i === Number(current) + 4 && i < pages) { %>
+                  <a>...</a>
+              <% } %>
+          <% } %>
+          <% if (current === pages) { %>
+              <a>Last</a>
+          <% } else { %>
+              <a href="/dashboard/home/<%= pages %>">Last</a>
+          <% } %>
+      
+    <% } %>
+    </div>
 
 <script src="moment.js"></script>
 <script src="moment-timezone-with-data.js"></script>
