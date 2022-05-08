@@ -11,26 +11,26 @@
 | 9 | Test to see if entering correct details in login page leads to the dashboard page | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on the login button <br> 3. Enter correct user credentials | User specific dashboard should be visible |
 | 10 | Test to see if dashboard has a navigation bar with different news category tabs| Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details | Dashboard should have a navigation bar with different tabs |
 | 11 | Test to see if each tab on the navigation bar displays news of that category only | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details <br> Select different tabs on the bar| Each tab should display news of that particular category only |
-| 12 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 13 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 14 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 15 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 16 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 17 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 18 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 19 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 20 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 21 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 22 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser|  |
-| 23 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 24 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 25 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 26 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 27 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 28 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 29 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 30 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
-| 31 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
+| 12 | Test to see if refresh button displays latest news | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser  <br> 2. Click on login button <br> 3. Enter correct user details <br> 4. Click on the refresh button | The news displayed should be the latest news available |
+| 13 | Test to see if the error message is given when no settings are saved | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser  <br> 2. Click on login button <br> 3. Enter correct user details <br> 4. Click on the settings button <br> 5. Unselect all selections | Error message should be given |
+| 14 | Test to see if the news in Home tab is based on the categories chosen in settings | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details <br> 4. Verify news titles in the home tab with the categories selected in settings | News displayed should only be from the selections made in settings |
+| 15 | Test to see if the articles are sorted in descending order of publishing date | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details <br> 4. Observe the publishing date and time of articles| The articles should be in descending order of publishing date and time |
+| 16 | Test to see if pagination works | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details <br> 4. Select the pagination numbers on the bottom of the page | The links on the numbers shoul lead to another page with older articles still in descending order for each category |
+| 17 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 18 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 19 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 20 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 21 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 22 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 23 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 24 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 25 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 26 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 27 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 28 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 29 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 30 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
+| 31 |  | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Click on login button <br> 3. Enter correct user details |  |
 | 32 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
 | 33 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
 | 34 |  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser |  |
