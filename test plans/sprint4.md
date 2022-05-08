@@ -22,6 +22,8 @@ This is an application created for logging in and signup up users. The landing p
 - Category wise news on individual category tabs
 - Pagination on dashboard and landing page tabs to display limited number of articles
 - News articles to appearing in descending order of published date.
+- Search bar to search for articles with certain keywords
+- Includes advanced search which uses logical operators to find articles
 
 
 # Approach
@@ -53,17 +55,19 @@ We have approached this sprint by first creating the UX for the web application 
 ### Login and Logout
 - User can check successfully login and logout and check for the news
 
-### Integration Testing
-- For Integration testing we are following the Bottoms UP testing stategywhere we test lower level modules and move further up
-- Integration testing has been used to check the integration of the modules and components and to test that they are all running as expected
-- when an unauthenticated user is on the landing page, they should be able to access the login page with status 200 ok
-- After entering the correct login details the user whould be able to access the dashboard 
-- when an unauthenticated user enters details in the signup page they should be directed to the login page 
-- The authenticated user should be able to access the settings button and select preferences 
-- Authenticated user should be able to access the signout button on dashboard and should be directed back to the unauthenticated dashboard to login or sign up
+### Search Bar
+- User can enter a certain keyword to recieve a list of articles with that keyword
+- User can use logical operators like AND, OR and NOT with a set of keywords to provide a more refined search
+
+### Regression  Testing
+- Regression testing is testing existing software applications to make sure that a change or addition hasn't broken any existing functionality
+- We are using regression testing to evaluate every test report from every sprint to ensure efficiency of the code
+- Regression testing will be done through manual tests to test every functionality of the web application from all the sprints
+- Regression testing will be carried out after every change made to the code to ensure that every element of the code runs properly
+- System testing will be run in the form of automated tests using Selenium for the functionalities of the web application
 
 # Testing Tasks
-- Integration Testing is to be done by each Team member on their own machine
+- Regression Testing is to be done by each Team member on their own machine
 
 # Responsibilities
 - UX testing
