@@ -1,4 +1,4 @@
-| Test ID | Task | Prerequisite| Description/ Steps | Expected Output| Pass/Fail
+| Test ID | Task | Prerequisite| Description/ Steps | Expected Output| Pass/Fail |
 | ------- | ---- | ------------| ------------------ | -------------- | ------------- |
 | 1 | Test to see if landing page is loading  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser  | landing page should be visible  | Pass |
 | 2 | Test to see if the landing page displays general news | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser | Landing page should display news from the general category | Pass|
