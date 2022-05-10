@@ -30,3 +30,4 @@
 | Searchbar_1	 |Test when search word is entered in the search bar | Neha| Pass | ------- |Nikita|Pass|-------|
 | Searchbar_2 |	Test when advanced searching is used in the search bar  | Neha| Fail | Logic not working |Nikita|Pass|-------|
 | Searchbar_3	 |	Test when no search word is entered in the search bar| Neha| Pass | ------- |Nikita|Pass|-------|
+| Logout_1 |Test the functionality of the Log out button  | Nikita| Pass | ------- |Neha|Pass|-------|
