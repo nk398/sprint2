@@ -1,5 +1,5 @@
-| Test ID | Task | Prerequisite| Description/ Steps | 
-| ------- | ---- | ------------| ------------------ | 
+| Test ID | Task | Prerequisite| Description/ Steps | Expected Output |
+| ------- | ---- | ------------| ------------------ | --------------- |
 | 1 | Test to see if landing page is loading  | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser  | landing page should be visible  |
 | 2 | Test to see if the landing page displays general news | Web Application server should be running | Enter the url https://www.localhost:3000/1 in the browser | Landing page should display news from the general category |
 | 5 | Test to see if search bar on landing page leads to login page | Web Application server should be running | 1. Enter the url https://www.localhost:3000/1 in the browser <br> 2. Enter keyword in search bar and click on search | Login page should be displayed as only registered users can search for articles |
